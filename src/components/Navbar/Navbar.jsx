@@ -5,17 +5,17 @@ import search_icon from "../../assets/search_icon.svg"
 import bell_icon from "../../assets/bell_icon.svg"
 import profile_img from "../../assets/profile_img.png"
 import caret_icom from "../../assets/caret_icon.svg"
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <img src={logo} alt="" />
+        <h4>Capflix</h4>
           <ul>
-            <li>Inicio</li>
-            <li>TVShows</li>
-            <li>Peliculas</li>
+            <Link className="a1" to="/peliculas" >Inicio</Link>
+            <Link className="a1" to="/tvshows" >TvShows</Link>
+            <Link className="a1"to="/videopelicula" >Peliculas</Link>
             <li>Nuevo & Populares</li>
             <li>Mi Lista</li>
             <li>Por Lenguajes</li>
@@ -26,10 +26,8 @@ const Navbar = () => {
            <p>p</p>
         <img src={bell_icon} alt="" className="icons" />
           <div className="navbar-profile">
-            <img src={profile_img} alt=""className="profile" />
-            <img src={caret_icom}  />
             <div className="dropdown">
-                <p>Registrate a Netflix</p>
+                <button>Registrate a Netflix</button>
             </div>
          </div>
       </div>
