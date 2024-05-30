@@ -15,8 +15,6 @@ const App = () => {
         <Route path="/Tvshows" element={<Player></Player>}/>
         <Route path="/videopelicula" element={<Peliculas></Peliculas>}/>
       </Routes>
-      
-      
       </BrowserRouter>
     </div>
   )
