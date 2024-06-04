@@ -7,16 +7,14 @@ const Player = () => {
   return (
     <div className='player'>
       <Navbar></Navbar>
-    <div className='player-videos'>
       {
         Video.map((video)=>(
           <div className='player-reproduce'>
-            <h3>{video.nombre}</h3>
+            {/* <h3>{video.nombre}</h3> */}
             <ReactPlayer className="play-intro" url={video.url}></ReactPlayer>
           </div>
         ))
       }
-    </div>
     </div>
     
   )
